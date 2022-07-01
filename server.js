@@ -16,7 +16,7 @@ wss.on('connection', function connection(ws) {
       if (client !== ws && client.readyState === WebSocket.OPEN) {
         client.send(data.toString());
         console.log('data', data.toString());
-        client.send(new Date().toTimeString());
+        // client.send(new Date().toTimeString());
       }
     });
   });

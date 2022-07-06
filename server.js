@@ -59,7 +59,7 @@ wsServer.on('request', function (request) {
 
       // broadcasting message to all connected clients
       for(key in clients) {
-        clients[key].sendUTF(message.utf8Data);
+        // clients[key].sendUTF(message.utf8Data);
         console.log('sent Message to: ', clients[key]);
       }
     }
